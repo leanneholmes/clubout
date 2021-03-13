@@ -1,0 +1,12 @@
+.topic {
+    width: 45%;
+    display: inline-block;
+    background-color: aqua;
+    margin: 10px;
+}
+.topic p {
+    font-size: 14pt;
+    text-align: center;
+    margin: auto 0;
+    padding: 20px 0;
+}
