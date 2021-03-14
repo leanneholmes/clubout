@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <h2 class="text-center my-3">Drinking Buddy</h2>
+    <h2 class="text-center my-3" id='welcome'>Welcome </h2>
 
     <br>
 
@@ -30,7 +30,7 @@
                 <div class="card" style="max-width: 500px;">
                     <div class="row no-gutters">
                         <div class="col-sm-5" style="background: #868e96;">
-                            <img src="images/sample.svg" class="card-img-top h-100" alt="...">
+                            <img src="" class="card-img-top h-100" alt="...">
                         </div>
                         <div class="col-sm-7">
                             <div class="card-body">
@@ -46,7 +46,7 @@
                 <div class="card" style="max-width: 500px;">
                     <div class="row no-gutters">
                         <div class="col-sm-5" style="background: #868e96;">
-                            <img src="images/sample.svg" class="card-img-top h-100" alt="...">
+                            <img src="" class="card-img-top h-100" alt="...">
                         </div>
                         <div class="col-sm-7">
                             <div class="card-body">
@@ -68,7 +68,7 @@
                 <div class="card" style="max-width: 500px;">
                     <div class="row no-gutters">
                         <div class="col-sm-5" style="background: #868e96;">
-                            <img src="images/sample.svg" class="card-img-top h-100" alt="...">
+                            <img src="" class="card-img-top h-100" alt="...">
                         </div>
                         <div class="col-sm-7">
                             <div class="card-body">
@@ -84,7 +84,7 @@
                 <div class="card" style="max-width: 500px;">
                     <div class="row no-gutters">
                         <div class="col-sm-5" style="background: #868e96;">
-                            <img src="images/sample.svg" class="card-img-top h-100" alt="...">
+                            <img src="" class="card-img-top h-100" alt="...">
                         </div>
                         <div class="col-sm-7">
                             <div class="card-body">
@@ -99,6 +99,14 @@
         </div>
 
     </div>
+
+<script>
+    $(document).ready(function() {
+        var name1 = localStorage.getItem('username');
+       console.log(name1);
+       document.getElementById('welcome').append(name1);
+    });
+</script>
 </body>
 
 </html>
