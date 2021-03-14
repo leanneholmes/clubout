@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>clubout.</title>
+    <title>Browse for Clubs</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -65,7 +65,6 @@ h6 {
   font-weight: 600;
   margin: 0px;
   color: #313450;
-  padding-bottom: 20px;
 }
 
 h1 a,
@@ -198,6 +197,23 @@ p {
 .break {
     padding-top: 20px;
 }
+
+.card {
+    border-radius: 10px;
+}
+
+.card-text{
+    line-height: 23px;
+}
+
+.card-title{
+    padding-top: 0px;
+}
+
+.col-md-10{
+    text-align: center;
+}
+
         </style>
 </head>
 <body>
@@ -210,8 +226,15 @@ p {
                     <img src="img/logo-60.jpg" alt="Logo"/>
                   <div class="collapse navbar-collapse sub-menu-bar">
                     <ul id="nav" class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="clubs.html">My Clubs &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                          </li>
                       <li class="nav-item">
-                        <a href="signin.html">Sign In</a>
+                        <a href="profile.html">My Profile &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                      </li>
+
+                      <li class="nav-item">
+                        <a href="home.html">Log Out</a>
                       </li>
 
                     </ul>
@@ -223,23 +246,75 @@ p {
         </div>
       </header>
 
-  
 
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12 main-section">
-              <div class="content">
-                <h1>Welcome to clubout.</h1>
-                <p>
-                  A platform for discovering groups and friends you can connect with over common interests. 
-                </p>
-                <div class="break"></div>
-                <a href="questionnaire.html" class="main-btn btn-hover">Get Started</a>
+    <h2 class="text-center my-3" id='welcome'>Welcome, </h2>
+
+    <br>
+
+    <div class="container mt-3">
+
+        Some recommendations for you based on your interests: 
+        <div class="break"></div>
+
+        <!--Row with two equal columns-->
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <img src="img/foodie.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Foodies United</h5>
+                  <p class="card-text">Share your favorite recipes and try out new local eateries with fellow foodies.</p>
+                </div>
               </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="img/among-us.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Among Us Game Nights</h5>
+                  <p class="card-text">Join us for a fun filled night of Among Us games!</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="img/yoga.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Online Yoga Buddies</h5>
+                  <p class="card-text">Tune in for our free weekly yoga sessions. We welcome all fitness levels.</p>
+                </div>
+              </div>
+            </div>
+          </div>
 
-  
+          <div class="row justify-content-center"><div class="col-md-10">
+              <div class="break"></div>
+              <div class="break"></div>
+Or search for clubs by keyword or category: <div  class="break"></div>
+            <form class="d-flex ml-auto">
+                <input class="form-control me-2" type="search" placeholder="Find your next group" aria-label="Search">
+                <button class="btn btn-info" type="submit">Search</button>
+              </form> <div class="break"></div>
+                <button type="button" class="btn btn-outline-secondary  btn-sm">Health & Wellness</button>
+                <button type="button" class="btn btn-outline-secondary  btn-sm">Travel</button>
+                <button type="button" class="btn btn-outline-secondary  btn-sm">Online</button>
+                <button type="button" class="btn btn-outline-secondary  btn-sm">Food & Drink</button>
+                <button type="button" class="btn btn-outline-secondary  btn-sm">Music</button>
+                <button type="button" class="btn btn-outline-secondary  btn-sm">Tech</button>
 
-                  </div>  
-        </div>
+
+              
+          </div></div>
+
+    </div>
+
+<script>
+    $(document).ready(function() {
+        var name1 = localStorage.getItem('username');
+       console.log(name1);
+       document.getElementById('welcome').append(name1);
+    });
+</script>
 </body>
+
 </html>
