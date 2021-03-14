@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Description</title>
+    <title>Movie  Night Watch Parties Club Page</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -13,13 +13,246 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="style/style.css">
 
+    <style>
+    
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,500&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  color: #6B6F92;
+  overflow-x: hidden;
+  background-color: #fbfcfe;
+  background-image: url("img/bg2.jpg");
+  background-position: right center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+    color: #313450;
+    font-weight: bold;
+}
+
+a:hover {
+  color: #4cb2cb;
+  text-decoration: none;
+}
+
+
+i,
+span,
+a {
+  display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  margin: 0px;
+  color: #313450;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: inherit;
+}
+
+h1 {
+  font-size: 45px;
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 36px;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+ul,
+ol {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  margin: 6px;
+}
+
+
+.main-btn {
+  display: inline-block;
+  font-weight: 500;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  padding: 18px 35px;
+  font-size: 16px;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 5;
+  transition: all .4s ease-in-out;
+  border: none;
+  background: #4cb2cb;
+  overflow: hidden;
+
+}
+
+.main-btn:hover {
+  color: #fff;
+}
+
+.border-btn {
+  border: 2px solid #4cb2cb;
+  color: #4cb2cb;
+  background: transparent;
+}
+
+.border-btn:hover {
+  color: #4cb2cb;
+}
+
+.border-btn.btn-hover::after {
+  background: rgba(245, 180, 88, 0.25);
+}
+
+.btn-hover {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-hover::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 0%;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.05);
+  top: 50%;
+  left: 50%;
+  padding: 50%;
+  z-index: -1;
+  transition: all 0.3s ease-out 0s;
+  transform: translate3d(-50%, -50%, 0) scale(0);
+}
+
+.btn-hover:hover::after {
+  transform: translate3d(-50%, -50%, 0) scale(1.3);
+}
+
+      .main-section .content {
+        padding-top: 360px;
+
+      }
+
+.break {
+    padding-top: 20px;
+}
+
+.card {
+    border-radius: 10px;
+}
+
+.card-text{
+    line-height: 23px;
+}
+
+.card-title{
+    padding-top: 0px;
+}
+
+.col-md-10{
+    text-align: center;
+}
+
+.center{
+    text-align: center;
+} 
+
+        </style>
 </head>
-
 <body>
+    <header class="header">
+        <div class="navbar-area">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-12">
+                <nav class="navbar navbar-expand-lg">
+                    <img src="img/logo-60.jpg" alt="Logo"/>
+                  <div class="collapse navbar-collapse sub-menu-bar">
+                    <ul id="nav" class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="clubs.html">My Clubs &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                          </li>
+                      <li class="nav-item">
+                        <a href="profile.html">My Profile &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                      </li>
+
+                      <li class="nav-item">
+                        <a href="home.html">Log Out</a>
+                      </li>
+
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+
     <div class="con"></div>
-    <h2 class="text-center my-3">Topic name</h2>
+    <h2 class="text-center my-3">Movie Night Watch Parties</h2>
 
     <br>
 
@@ -29,28 +262,36 @@
             <div class="card" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-sm-5" style="background: #868e96;">
-                        <img src="images/" class="card-img-top h-100" alt="...">
+                        <img src="img/netflix.jpg" class="card-img-top" alt="...">
                     </div>
                     <div class="col-sm-7">
                         <div class="card-body">
-                            <h5 class="card-title">Join if you want to have fun with...</h5>
-                            <p class="card-text">(Description goes here)</p>
-                            <p class="card-text"><b>Organizer: </b>BCIT</p>
-                            <p class="card-text"><b>Date: </b>14 March, 2021</p>
-                            <p class="card-text"><b>Timing: </b>6:30pm - 7:30 pm</p>
-                            <a href="https://zoom.us/j/99621685116?pwd=RTVtNzF0M0o3WkVaT3JHczNuRERVdz09" target="_blank"><b>Zoom link</b></a>
+                            <h3 class="card-title">Let's watch a movie together! </h3>
+                            <p class="card-text">Join us every Saturday night on Zoom where we'll watch a movie that the group has voted for. 
+                                We'll chit chat for a bit then  start the movie at 6:45 PM  sharp. </p>
+
+                                <p class="card-text">We love all genres! If you have any movie suggestions, feel free to bring them up in the group. Happy watching :) </p>
+<div class="break"></div>
+                            
+                            <p class="card-text"><b>Organizer: </b>Justin Brown</p>
+                            <p class="card-text"><b>Date: </b>Every Saturday evening</p>
+                            <p class="card-text"><b>Time: </b>6:30pm - 8:30 pm</p> <p></p> 
+                            <p class="card-text"><b>Location: </b>On Zoom</p> <p></p> 
+
+                            <div  class="break"></div><div class="center">
+                            <a href="https://zoom.us/j/99621685116?pwd=RTVtNzF0M0o3WkVaT3JHczNuRERVdz09" target="_blank"><b>Zoom Meeting Link</b></a></div>
                         </div>
                     </div>
                 </div>
             </div>
-
+<div class="center">
             <br>
 
             <a href = "index.html">
-            <button type="button" class="btn btn-primary btn-lg btn-block">Choose another topic</button>
+            <button type="button" class="btn btn-info btn-lg btn-block">Return to the browsing page</button>
             </a>
 
-        </div>
+        </div></div>
 
     </div>
 </body>
